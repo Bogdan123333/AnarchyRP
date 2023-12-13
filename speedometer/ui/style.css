@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+  font-size: 0.8333333333333334vw;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main {
+  position: absolute;
+}
+
+@media (aspect-ratio: 5/4) {
+  .main {
+      top: 31.73828125vh;
+  }
+}
+
+@media (aspect-ratio: 4/3) {
+  .main {
+      top: 26.692708333333332vh;
+  }
+}
+
+@media (aspect-ratio: 16/10) {
+  .main {
+      top: 12.777777777777777vh;
+  }
+}
+
+.main .comp1 {
+  position: absolute;
+  width: 18.125rem;
+  height: 14.8125rem;
+  left: 99.125rem;
+  top: 52.625rem;
+
+background-image: url(assets/Group907.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+
+.main .comp1b {
+  position: absolute;
+  width: 1.1031rem;
+  height: 1.125rem;
+  left: 98.25rem;
+  top: 62.625rem;
+  background-image: url(assets/fuel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.main .comp1a {
+  position: absolute;
+  width: 1.125rem;
+  height: 1.125rem;
+  left: 116.9375rem;
+  top: 62.75rem;
+  background-image: url(assets/gear.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .comp1c {
+  position: absolute;
+  width: 1.1031rem;
+  height: 1.125rem;
+  left: 106.625rem;
+  top: 63.125rem;
+
+  opacity: 0.5;
+background-image: url(assets/seatbelt.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.main .comp1d {
+  position: absolute;
+  width: 1.1031rem;
+  height: 1.125rem;
+  left: 108.4375rem;
+  top: 63.125rem;
+  
+  opacity: 0.5;
+background-image: url(assets/headlight.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.main .comp1e {
+  position: absolute;
+  width: 1.1031rem;
+  height: 1.125rem;
+  left: 110.25rem;
+  top: 63.125rem;
+  opacity: 0.5;
+background-image: url(assets/doors.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.main .comp1f {
+  position: absolute;
+  width: 1.1031rem;
+  height: 1.125rem;
+  left: 112.0625rem;
+  top: 63.125rem;
+background-image: url(assets/engine.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.main .comp1g {
+  position: absolute;
+  left: 113.256rem;
+  right: 5.892rem;
+  top: 59.1502rem;
+  bottom: 7.5263rem;
+  background-image: url(assets/vector.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  /* background: #FFFFFF; */
+}
+
+.main .comp1h {
+  position: absolute;
+  left: 105.684rem;
+  right: 13.392rem;
+  top: 59.1165rem;
+  bottom: 7.4925rem;
+  background-image: url(assets/vector.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  rotate: 180deg;
+  opacity: 0.5;
+  /* background: #FFFFFF; */
+}
+
+
+.main .comp2 {
+  
+  position: absolute;
+  width: 12.5625rem;
+  height: 12.5625rem;
+  left: 103.5625rem;
+  top: 53.75rem;
+  
+  background-image: url(assets/Group905.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .comp2a {
+  position: absolute;
+  width: 5.875rem;
+  height: 6.5556rem;
+  left: 106.9375rem;
+  top: 57.6875rem;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.6875rem;
+  text-align: center;
+  /* identical to box height */
+
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main .comp2aa {
+  display: flex;
+  position: absolute;
+  width: 13.125rem;
+  height: 11.375rem;
+  left: 103.4063rem;
+  top: 52.125rem;
+  /* border: 0.125rem solid red; */
+  align-items: center;
+  justify-content: center;
+}
+
+.main .comp2aa .c {
+  position: absolute;
+  top:50%;
+  /* left: 85.75rem; */
+  width: 6.25rem;
+  height: 6.25rem;
+  transform: rotate(150.5deg);
+  transform-origin: 50% 50%; 
+}
+
+.main .comp2ab {
+  display: flex;
+  position: absolute;
+  width: 13.125rem;
+  height: 13.125rem;
+  left: 104.5rem;
+  overflow: hidden;
+  /* max-height: 9.375rem; */
+  top: 54.5rem;
+  /* border: 0.125rem solid red; */
+  align-items: center;
+  justify-content: center;
+}
+
+.main .comp2ab .c {
+  position: absolute;
+  top:50%;
+  /* left: 85.75rem; */
+  width: 6.25rem;
+  height: 1.25rem;
+  transform: rotate(-150deg) scaleX(-1);
+  transform-origin: 50% 50%; 
+}
+
+.main .comp2b {
+  position: absolute;
+  width: 2.1875rem;
+  height: 0.9375rem;
+  left: 110.5rem;
+  top: 57rem;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  /* identical to box height */
+
+  text-align: right;
+
+  color: #FFFFFF;
+}
+
+.main .comp2c {
+  /* 35 */
+
+
+  position: absolute;
+  width: 1.375rem;
+  height: 1.375rem;
+  left: 100.6875rem;
+  top: 60.5rem;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+
+}
+
+.main .comp2d {
+  display: flex;
+  position: absolute;
+  width: 11.75rem;
+  height: 11.375rem;
+  left: 93.5938rem;
+  top: 58.375rem;
+}
+
+.main svg.comp2d .c {
+  /* position: absolute; */
+  /* left: 85.75rem; */
+  /* width: 6.25rem; */
+  /* height: 6.25rem; */
+  transform: rotate(75deg);
+  transform-origin: 50% 50%; 
+}
+
+@keyframes inout {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}

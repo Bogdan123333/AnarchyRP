@@ -1,0 +1,85 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="main.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="bankingContainer" style="display: none">
+		<div class="fleccaContainer">
+			<img src="https://cdn.discordapp.com/attachments/1090315573138829323/1160998609718874222/empire1_1.png">
+			<div class="txt">Banca</div>
+		</div>
+		<div class="title">FivemShop Banking</div>
+		<div class="desc">Bun venit la Banca FivemShop!</div>
+		<div class="buttons">
+			<div class="button" onclick="openReq('depunere')">
+				<i class="bi bi-plus-circle icons"></i>
+				<div class="textz">
+					<div class="ttl">Deposit</div>
+					<div class="dsc">Depoziteaza bani in cont-ul tau bancar.</div>
+				</div>
+			</div>
+			<div class="button red" onclick="openReq('retragere')">
+				<i class="bi bi-dash-circle icons red"></i>
+				<div class="textz">
+					<div class="ttl">Retrage</div>
+					<div class="dsc red">Retrage bani din cont-ul tau bancar.</div>
+				</div>
+			</div>
+			<div class="button yellow" onclick="openReq('transfer')">
+				<i class="bi bi-arrow-left-right icons yellow"></i>
+				<div class="textz">
+					<div class="ttl">Transfer</div>
+					<div class="dsc yellow">Transfera bani unui jucator.</div>
+				</div>
+			</div>
+		</div>
+		<div class="quickActions">
+			<div class="title">Actiuni Rapide</div>
+			<div class="desc">Fa niste actiuni rapide.</div>
+			<div class="buttons">
+				<div class="butt" onclick="depune(500)">Deposit 500$</div>
+				<div class="butt" onclick="depune(1500)">Deposit 1500$</div>
+				<div class="butt" onclick="depune(10000)">Deposit 10000$</div>
+				<div class="butt" onclick="retrage(500)">Retrage 500$</div>
+				<div class="butt" onclick="retrage(1500)">Retrage 1500$</div>
+				<div class="butt" onclick="retrage(10000)">Retrage 10000$</div>
+			</div>
+			<div class="title">Informatii</div>
+			<div class="desc">Vezi informatiile contului tau bancar.</div>
+			<div class="infos">
+				<div class="inf">IBAN: <span class="i" id="ibana">#1</span></div>
+				<div class="inf">Cont blocat: <span class="i">NU</span></div>
+				<div class="inf">Balanta: <span class="i" id="bal">$0</span></div>
+			</div>
+		</div>
+		<!-- <div class="yourBalace">
+			<div class="your">Balanta</div>
+			<div class="bal">Dvs</div>
+		</div>
+		<div class="balance" id="bal">100.000.000$</div> -->
+		<div class="x" onclick="closeMenu()">X</div>
+	</div>
+	<div class="bankingContainer2" style="display: none;">
+		<div class="title" id="title">Depoziteaza</div>
+		<div class="desc" id="desc">Mai jos scrie suma pe care vrei sa o depozitezi.</div>
+		<input type="number" style="display: none;" id="iban" placeholder="IBAN">
+		<input type="number" id="amt" placeholder="Suma">
+		<div class="buttons">
+			<div class="btn" onclick="closeSecondMenu()">Anuleaza</div>
+			<div class="btn" onclick="cont()">Contiuna</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</body>
+
+</html>

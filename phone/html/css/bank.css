@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bank-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle at top right, ##7400FF,##7400FF);
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: #FFF;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+
+}
+
+/* HEADER */
+.bank-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 0vh 1vh;
+}
+
+.bank-header h1 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 16px;
+    flex: 2;
+    text-align: center;
+}
+
+/* BALANCE WRAPPER */
+.bank-balance-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bank-balance-wrapper h3 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bold !important;
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.bank-balance-wrapper h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.bank-balance-wrapper h1 span {
+    font-size: 17px;
+}
+
+/* HR */
+.bank-hr {
+  margin: 10px 60px;
+  height: 1px;
+  background: #ffffff;
+    opacity: 0.5;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(##7400FF), to(##7400FF), color-stop(50%, ##7400FF));
+}
+
+/* Make a transfer */
+.bank-transfer-wrapper {
+    display: block;
+    padding: 0 2vh;
+}
+
+.bank-transfer-wrapper h3 {
+    text-align: center;
+    font-size: 3vh;
+    padding-bottom: 1vh;
+}
+
+.bank-transfer-wrapper h3 i {
+    color: #ffffff;
+}
+
+#bank-transfer-grid::-webkit-scrollbar {
+  display: none;
+}
+
+#bank-transfer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-rows: 10vh;
+    grid-gap: 1.5vh 1vh;
+
+    max-height: 34vh;
+    overflow-y: auto;
+}
+
+.bank-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.3);
+    transition: background-color .3s, border-radius .3s;
+    font-size: 1.2vh;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bold !important;
+}
+
+.bank-contact-side span {
+    white-space: nowrap;
+}
+
+.bank-contact-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 0.6; /* Firefox */
+  }
+
+.bank-contact-picture {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  transition: height .1s, width .1s;
+}
+
+.bank-add-icon {
+    font-size: 3vh;
+    transition: font-size .1s;
+}
+
+.bank-contact:not(.selected):hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.bank-contact:not(.selected):hover .bank-contact-picture {
+    width: 6vh;
+    height: 6vh;
+}
+
+.bank-contact:not(.selected):hover .bank-add-icon {
+    font-size: 4vh;
+}
+
+.bank-contact-side input {
+    background-color: #000000;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    padding: 0.5vh;
+    margin: 0.2vh;
+    text-align: center;
+}
+
+.bank-contact-side input::-webkit-outer-spin-button,
+.bank-contact-side input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bank-contact-side .bank-btn {
+    padding: 0.5vh 2vh;
+    margin-top: 2px;
+    border-radius: 12px;
+    background-color: #000000;
+    transition: background-color .3s;
+}
+
+.bank-contact-side .bank-btn:hover {
+    background-color: #ffffff;
+    color:black !important;
+}
+
+.bank-transfer-wrapper .tooltip {
+    background-color: rgba(255, 255, 255, 0.446);
+}

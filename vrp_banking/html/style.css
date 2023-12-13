@@ -1,0 +1,395 @@
+body {
+    font-family: Poppins;
+    user-select: none;
+    overflow: hidden;
+}
+
+.bankingContainer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(-120deg, rgba(1, 4, 10, 0.719), rgba(19, 107, 255, 0.719));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes slidein {
+    from {
+      transform: translateY(-100%) scale(1.05);
+    }
+  
+    to {
+      transform: translateY(0%) scale(1.05);
+    }
+  }
+  @keyframes scss {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+
+.bankingContainer > .fleccaContainer {
+    position: absolute;
+    width: 11vw;
+    height: 9.6vw;
+    top: 0;
+    margin-top: -.5vw;
+    left: 20vw;
+    background-color: rgba(179, 179, 179, 0.165);
+    border-radius: 0vw 0vw 2.5vw 2.5vw;
+    transform: scale(1.05);
+    /* z-index: 2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4vw;
+    animation: slidein 3s;
+}
+
+.bankingContainer > .fleccaContainer > img {
+    /* right: 1.4vw; */
+    position: relative;
+    margin-top: 2vw;
+    opacity: 1;
+    width: 8vw;
+}
+
+.bankingContainer > .fleccaContainer > .txt {
+    right: 1.4vw;
+    /* margin-top: 1.9vw; */
+    font-weight: 500;
+    color: rgba(177, 177, 177, 0.651);
+    font-size: .75vw;
+    letter-spacing: .5vw;
+    opacity: 1;
+}
+
+.bankingContainer > .fleccaContainer::after {
+    position: absolute;
+    content: ' ';
+    width: 11vw;
+    height: 9.6vw;
+    /* top: 0;
+    left: 20vw; */
+    /* margin-left: .25vw;
+    margin-top: .05vw; */
+    margin-left: 0vw;
+    margin-top: .1vw;
+    transform: scale(1.025);
+    background-color: transparent;
+    border: .1vw solid rgba(179, 179, 179, 0.165);
+    border-radius: 0vw 0vw 2.6vw 2.6vw;
+    z-index: 2;
+}
+
+.bankingContainer > .title {
+    text-transform: uppercase;
+    text-shadow: 0 0 10px white;
+    color: white;
+    font-weight: 800;
+    font-size: 1.8vw;
+}
+
+.bankingContainer > .desc {
+    color: rgba(179, 179, 179, 0.767);
+    font-weight: 400;
+    letter-spacing: .06vw;
+    font-size: .7vw;
+}
+
+.bankingContainer > .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.5vw;
+    gap: 1vw;
+}
+
+.buttons > .button {
+    width: 18vw;
+    height: 4.9vw;
+    border-radius: 1.1vw;
+    background-color: #4ab1004f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .7s;
+}
+
+.buttons > .red {
+    background-color: #b2000c4f;
+}
+
+.buttons > .yellow {
+    background-color: #af81004f;
+}
+
+.button > .icons {
+    color: white;
+    font-size: 1.55vw;
+    padding: .6vw .65vw;
+    margin-left: 1.1vw;
+    background-color: #4cb600;
+    border-radius: .7vw;
+    transition: .7s;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+.button > .textz {
+    display: flex;
+    flex-direction: column;
+    margin-left: .6vw;
+}
+
+.textz > .ttl {
+    color: white;
+    font-weight: 500;
+    font-size: .8vw;
+}
+
+.textz > .dsc {
+    color: #419d00;
+    font-weight: 400;
+    font-size: .6vw;
+}
+
+.textz > .red {
+    color: #c30000;
+}
+
+.textz > .yellow {
+    color: #cf9700;
+}
+
+.button > .red {
+    background-color: #aa0000;
+}
+
+.button > .yellow {
+    background-color: #946c00;
+}
+
+.bankingContainer > .quickActions {
+    width: 55.8vw;
+    height: 14.8vw;
+    margin-top: 2vw;
+    background-color: rgba(179, 179, 179, 0.165);
+    border-radius: 0vw 0vw 2.5vw 2.5vw;
+    border-radius: 1.3vw;
+    margin-bottom: 5vw;
+}
+
+.bankingContainer > .quickActions::before {
+    position: absolute;
+    content: ' ';
+    width: 54.9vw;
+    height: 14.75vw;
+    margin-left: .35vw;
+    margin-top: -.0705vw;
+    transform: scale(1.025);
+    background-color: transparent;
+    border: .1vw solid rgba(179, 179, 179, 165);
+    border-radius: 1.5vw;
+    z-index: -1;
+}
+
+.quickActions > .title {
+    color: white;
+    font-size: .8vw;
+    font-weight: 500;
+    margin: 1.2vw;
+}
+
+.quickActions > .desc {
+    color: rgba(177, 177, 177, 0.692);
+    font-size: .6vw;
+    font-weight: 400;
+    margin-left: 1.2vw;
+    margin-top: -1.2vw;
+    letter-spacing: .05vw;
+}
+
+.quickActions > .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.2vw;
+    gap: 1vw;
+    margin-top: .5vw;
+}
+
+.quickActions > .buttons > .butt {
+    color: white;
+    font-weight: 500;
+    font-size: .6vw;
+    background-color: rgba(151, 151, 151, 0.426);
+    border: .12vw solid rgba(151, 151, 151, .826);
+    border-radius: .5vw;
+    padding: .35vw .5vw;
+    transition: .6s;
+}
+
+.quickActions > .buttons > .butt:hover {
+    opacity: .4;
+}
+
+.quickActions > .infos {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 1.2vw;
+    background-color: rgba(151, 151, 151, 0.426);
+    border: .12vw solid rgba(151, 151, 151, .826);
+    border-radius: .5vw;
+    padding: .35vw .5vw;
+    display: flex;
+    margin-top: .5vw;
+    flex-direction: column;
+}
+
+.infos > .inf {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .65vw;
+}
+
+.inf > .i {
+    font-weight: 400;
+    font-size: .6vw;
+    color: rgba(189, 189, 189, 0.719);
+}
+
+.yourBalace {
+    position: absolute;
+    top: 42.5vw;
+    right: 27vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.balance {
+    position: absolute;
+    top: 42.57vw;
+    left: 73.5vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: left;
+    font-weight: 500;
+    color: white;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.603);
+    font-size: 1.45vw;
+    flex-direction: column;
+}
+
+.yourBalace > .your {
+    color: rgb(19, 107, 255);
+    font-weight: 600;
+    font-size: .8vw;
+    text-transform: uppercase;
+}
+
+.yourBalace > .bal {
+    color: rgb(19, 107, 255);
+    font-weight: 600;
+    font-size: .7vw;
+    text-transform: uppercase;
+}
+
+.x {
+    position: absolute;
+    top: 11vw;
+    right: 22.3vw;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.503);
+    padding: .7vw .99vw;
+    border-radius: .6vw;
+    transform: scale(.9);
+    transition: .7s;
+    font-size: .8vw;
+}
+
+.x:hover {
+    opacity: .5;
+}
+
+.bankingContainer2 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(-120deg, rgba(1, 4, 10, 0.719), rgba(19, 107, 255, 0.719));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+}
+
+.bankingContainer2 > .title {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3vw;
+}
+
+.bankingContainer2 > .desc {
+    color: rgba(180, 180, 180, 0.658);
+    text-align: center;
+    font-weight: 400;
+    font-size: .65vw;
+}
+
+.bankingContainer2 > input {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.485);
+    /* width: 5vw; */
+    height: 2.4vw;
+    width: 14vw;
+    color: white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: .7vw;
+    margin-top: .5vw;
+}
+
+.bankingContainer2 > .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vw;
+    gap: 1vw;
+}
+
+.buttons > .btn {
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: .5vw;
+    font-size: .7vw;
+    border-radius: .55vw;
+    letter-spacing: .1vw;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.485);
+}
+
+.buttons > .btn:hover {
+    opacity: .6;
+}

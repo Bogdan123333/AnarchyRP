@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+	--olx-main: #24e5db;
+	--olx-bg: #002f34;
+	--olx-grey: #004568;
+}
+
+.olx-app {
+	display: none;
+	height: 100%;
+	width: 100%;
+	background-color: var(--olx-grey);
+	overflow: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+
+#olx-main-container {
+	width: 105%;
+	height: 72%;
+
+	padding: 0 9% 0 6%;
+	padding-bottom: 2vh;
+
+	margin: 0 auto;
+	margin-top: 5vh;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #001b1e;
+}
+
+/* Prompt */
+
+#olx-prompt {
+
+	position: absolute;
+	left: 1.4vh;
+	width: 26vh;
+	height: 51vh;
+	background-color: white;
+	padding: 1vh;
+	border-radius: 10px;
+	box-shadow: 0px 0px 300px 0px black;
+
+	display: none;
+	top: 60vh;
+}
+
+#olx-prompt .olx-prompt-title {
+	font-size: 1.6vh;
+	font-weight: bold;
+	margin-bottom: 1vh;
+	text-align: center;
+}
+
+#olx-prompt .olx-pormpt-body {
+	font-size: 1.3vh;
+}
+
+#olx-prompt .olx-form-area textarea {
+	resize: none;
+}
+
+#olx-prompt .olx-form-area .olx-btn {
+	display: inline-block;
+	width: 10.5vh;
+	margin: 1vh 0 0 .5vh;
+}
+
+/* Header */
+.olx-app-header {
+	position: relative;
+	font-size: 2.5vh;
+	top: 4vh;
+	color: rgb(255, 255, 255);
+	height: 5vh;
+	line-height: 5vh;
+	text-align: center;
+}
+
+.olx-app-header div {
+	font-size: 1.5vh;
+}
+
+.olx-app-header div i {
+	background: var(--olx-bg);
+
+	width: 3.4vh;
+	height: 3.4vh;
+	line-height: 3.4vh;
+
+	border-radius: 3px;
+	color: white;
+	transition: color .3s;
+}
+
+.olx-app-header div i:hover {
+	color: var(--olx-main);
+}
+
+.olx-app-header div input {
+    height: 3.5vh;
+    border: 1px solid rgba(0, 0, 0, .3);
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: border .3s;
+    line-height: 4vh;
+}
+
+.olx-app-header div span {
+	text-transform: capitalize;
+	padding-left: 10px;
+	display: inline-block;
+	width: 19vh;
+	font-size: 1.8vh;
+	text-align: left;
+}
+
+
+
+#olx-search input:focus {
+    border: 1px solid rgba(36, 229, 219, .8);
+}
+
+
+/* Home Section (categories) */
+#olx-tab-home {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5vh;
+}
+
+.olx-category {
+	flex: 40%;
+	height: 10vh;
+	margin: 4px;
+	padding: 8px;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	background-color: var(--olx-bg);
+}
+
+.olx-category i {
+	display: block;
+	font-size: 3vh;
+	margin-bottom: .5vh;
+	background-color: var(--olx-main);
+	width: 5vh;
+    height: 5vh;
+	border-radius: 50%;
+    margin: 0 auto;
+    padding-top: 1vh;
+    margin-bottom: 1vh;
+    transition: color .3s;
+}
+
+.olx-category:hover i {
+	color: var(--olx-bg);
+}
+
+/* Add Section */
+.olx-form-area {
+	margin-top: 2vh;
+}
+
+.olx-form-area label {
+	display: block;
+	margin: 2vh 1vh 0 2vh;
+	color: var(--olx-bg);
+}
+
+.olx-form-area input, .olx-form-area textarea {
+	display: block;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid black;
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	transition: border-bottom-color .3s;
+}
+
+.olx-form-area select {
+	display: block;
+    width: 82%;
+    margin: 0 auto;
+    height: 3vh;
+    border-radius: 5px;
+}
+
+.olx-gallery-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 10vh);
+    grid-template-rows: repeat(2, 8vh);
+    row-gap: 1vh;
+    column-gap: 2vh;
+    margin: 0 1vh;
+}
+
+.olx-gallery-obj {
+	font-size: 4vh;
+	line-height: 8vh;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	background-color: var(--olx-bg);
+	transition: color .3s, font-size .3s;
+}
+
+.olx-gallery-obj:hover {
+	color: var(--olx-main);
+	font-size: 4.5vh;
+}
+
+.olx-gallery-image {
+	position: relative;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+	background-size: cover;
+
+	/* Expreimental
+		Nu e inca suportat de chrome
+		background-image: attr(data-image-src url);
+	*/
+}
+
+.olx-gallery-image i:not(.olx-image-btn) {
+	display: none;
+}
+
+.olx-image-btn {
+	position: absolute;
+	font-size: 1.6vh;
+	color: white;
+	top: 1px;
+	right: 3px;
+
+	transition: color .2s;
+
+	text-shadow: 0 0 2px black;
+}
+
+.olx-image-btn:hover {
+	color: var(--olx-main);
+}
+
+.olx-btn {
+	color: white;
+	background-color: var(--olx-bg);
+	margin: 1.5vh;
+	padding: 0.5vh;
+	border-radius: 5px;
+	text-align: center;
+	transition: color .3s;
+}
+
+.olx-btn:hover {
+	color: var(--olx-main);
+}
+
+
+
+/* Result Section */
+
+.olx-sort {
+    font-weight: 600;
+    margin-top: 1vh;
+    font-size: 1.3vh;
+    text-align: center;
+}
+
+.olx-obj {
+	background-color: var(--olx-grey);
+	border-radius: 5px;
+	margin-bottom: 2vh;
+	max-height: 35vh;
+}
+
+.olx-obj.promoted {
+	background-color: var(--olx-bg);
+	color: white;
+}
+
+.olx-obj .olx-row:first-child {
+	height: 14vh;
+}
+
+.olx-obj .olx-row:last-child {
+	padding: 1vh;
+}
+
+.olx-row img {
+	display: block;
+	width: 25vh;
+	border-radius: 20px;
+	margin: 2vh auto;
+	padding: 1vh;
+}
+
+.olx-row .olx-price {
+	float: right;
+	color: white;
+}
+
+.olx-row .olx-date {
+	font-size: 1vh;
+	color: white;
+	margin-bottom: 1.5vh;
+}
+
+.olx-row .olx-desc {
+	font-size: 1.2vh;
+	color: white;
+	white-space: pre-wrap; 
+	margin-bottom: 1.5vh;
+}
+
+.olx-row .olx-phone {
+	float: right;
+	font-size: 1.5vh;
+	color: white;
+	transition: color .3s;
+	margin-right: .5vh;
+	margin-top: .5vh;
+}
+
+.olx-row .olx-phone:hover {
+	color: var(--olx-main);
+}
+
+.olx-row .olx-collapse-btn {
+	font-size: 1.2vh;
+	transition: color .3s;
+	color: white;
+	padding-top: 1vh;
+}
+
+.olx-row .olx-collapse-btn:hover {
+	color: var(--olx-main);
+}
+
+.olx-collapse-btn i {
+	margin-left: 1.8vh;
+}
+
+/* My Section */
+
+ul.olx-edit-list {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul.olx-edit-list li {
+	display: inline-block;
+	width: 20%;
+	font-size: 1.5vh;
+}
+
+ul.olx-edit-list li i {
+	transition: color .3s;
+}
+
+ul.olx-edit-list li i:hover {
+	color: var(--olx-main);
+}
+
+
+
+/* Footer */
+.olx-app-footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 7.5vh;
+	padding-top: 1.5vh;
+	z-index: 101;
+	background-color: var(--olx-bg);
+}
+
+.olx-app-footer-button {
+	position: relative;
+	height: 100%;
+	width: 33%;
+	text-align: center;
+	float: left;
+	color: #fdfdfd;
+	transition: .3s;
+}
+
+.olx-app-footer-button:not(.olx-selected-footer-tab):hover {
+	color: #52b3ae;
+}
+
+.olx-selected-footer-tab {
+	color: var(--olx-main);
+}
+
+.olx-addnew-button {
+	font-size: 4vh;
+	position: relative;
+	bottom: 20px;
+}
+
+.olx-addnew-button::after {
+	content: "";
+	display: block;
+	width: 6vh;
+	height: 6vh;
+	margin: 0 auto;
+	margin-top: -5.3vh;
+	background-color: var(--olx-bg);
+	border-radius: 50%;
+}

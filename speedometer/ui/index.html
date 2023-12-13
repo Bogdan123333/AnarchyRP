@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- JS Scripts -->
+        <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+        <div class = "main" style = "display:none;">
+          <div class = "comp1"></div>
+          <div class = "comp1a"></div>
+          <div class = "comp1b"></div>
+          <!-- ALEA DE JOS 4 -->
+            <div class = "comp1c"></div>
+            <div class = "comp1d" id = "faza"></div>
+            <div class = "comp1e"></div>
+            <div class = "comp1f"></div>
+          <!-- SEMNALE STANGE DREAPTA -->
+            <div class = "comp1g" id = "semnald"></div>
+            <div class = "comp1h" id = "semnals"></div>
+          <!--  -->
+          <div class = "comp2"></div>
+          <div class = "comp2a" id = "kmh">000</div>
+          <svg class= "comp2aa">
+            <circle class="c" id ="aaass2" stroke="#F6C863" stroke-width="0.7813rem" fill="transparent" r="5.9063rem" cx="7.75rem" cy="3.8125rem" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+            <defs>
+              <clipPath id="clip1">
+                <rect width="0.75rem" height="0.8125rem" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg> 
+          <svg class= "comp2aa">
+            <circle class="c" id ="aaass" stroke="#F6C863" stroke-width="0.7813rem" fill="transparent" r="5.9063rem" cx="7.75rem" cy="3.8125rem" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+            <defs>
+              <clipPath id="clip1">
+                <rect width="0.75rem" height="0.8125rem" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg> 
+          <svg class= "comp2ab">
+            <circle class="c" id ="aaassc" stroke="#FF3030" stroke-width="0.6563rem" fill="transparent" r="7.0625rem" cx="5rem" cy="6.875rem" stroke-dasharray="1070 30" stroke-dashoffset="0"/>
+            <defs>
+              <clipPath id="clip1">
+                <rect width="0.75rem" height="0.8125rem" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg> 
+          <div class = "comp2b">KM/H</div>
+          <div class = "comp2c" id = "fuel">0</div>
+          <svg class= "comp2d">
+            <!-- <circle class="background" stroke="#FFFFFF" stroke-width="3" style="stroke-opacity: .2;" fill="transparent" r="18" cx="20" cy="20" stroke-dasharray="70 30" stroke-dashoffset="0"/> -->
+            <circle class="c" id ="ful" stroke="#F6C863"  stroke-width="0.5rem" fill="transparent" r="2.3125rem" cx="3.62rem" cy="2.8125rem" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="0.75rem" height="0.8125rem" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>         
+        </div>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
