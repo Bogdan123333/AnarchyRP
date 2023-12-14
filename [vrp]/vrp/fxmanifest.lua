@@ -2,7 +2,7 @@ fx_version 'cerulean'
 games {  'gta5' }
 
 description "RP module/framework"
-
+dependency "vrp_mysql"
 dependency "ghmattimysql"
 resource_type 'map' {gameTypes = {['Los Santos'] = true}}
 map 'fivemopt/map.lua'
