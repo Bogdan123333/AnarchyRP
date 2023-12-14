@@ -3,5 +3,8 @@
     "password": "",
     "host": "localhost",
     "port": 3306,
-    "database": "anarchy"
+    "database": "anarchy",
+    "timeout" : 100000,
+    "connectTimeout" : 100000,
+    "acquireTimeout" : 100000
 }
